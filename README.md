@@ -1,20 +1,21 @@
 # Project *Name of App*
 
-*Name of App* is a Ruby on Rails application that provides a community to help students who want to have support from teachers or other students to improve their writing skills for preparing IELTS Exam.
+*Name of App* is a Ruby on Rails application that provides a community to help students who want to have support from teachers or other students to improve their writing skills for preparing IELTS Exam. Each writing consist of a task (example explain a chart, write a letter, essay) and the writing of the student. After finishing the task the Student can send it to Teachers asking for help or they can publish it so that all the teachers can see it and send request for a correcting job. The whole system uses Coin as a currency to exchange between Users, make payments, etc.
 
 - Submitted by: ETM Team
-- URL: 
+- URL:
 
 ## User Stories
 
 #### Coin
 
-* [ ] Coin is the reward for a teacher after correcting a writing of a student.
-* [ ] For each task the teacher requires an amount of coin, and wait for accepting from the student.
+* [ ] Coin is the currency used in the system.
+* [ ] Each Teacher defines his/her price for correcting a single writing (an amount of Coins).
 * [ ] The student can have a discount from the system and pay a part of the required amount from the teacher.
-* [ ] User can buy coin to top up their account.
-* [ ] User can exchange their coins into money.
-* [ ] For each transaction User need to give their 4 digits PIN code to confirm.
+* [ ] User can buy coin to top up their account (First step: individual contact with Admin).
+* [ ] User can exchange their coins into money First step: individual contact with Admin).
+* [ ] Admin can top up User's account.
+* [ ] For each transaction User need to give their 4 digits PIN code to confirm. (optional)
 * [ ] User receive an notification email after every transaction.
 * [ ] User can check their transaction history.
 * [ ] User can send coin to their friend or other member.
@@ -22,27 +23,28 @@
 #### Task
 
 There are two types of writing task in a IELTS Exam
-  - Summarize, describe or explain a table, graph, chart or diagram in at least 150 words
-  - Letter writing task of at least 150 words
-  - Short essay task of at least 250 words
+  Task 1:
+    - Summarize, describe or explain a table, graph, chart or diagram in at least 150 words
+    - Letter writing task of at least 150 words
 
-* [ ] User can create/edit/delete their own task before publish it.
+ Task 2:
+    - Short essay task of at least 250 words
+
+* [ ] There are a library of tasks in the system and User can get them randomly via a Task Generator.
+* [ ] User can create their own task.
 * [ ] If the task is type 1, User can upload an image file of the table, graph, chart or diagram.
-* [ ] User can publish their task for other students to submit their writing.
-* [ ] User can see all published task and start writing then submit it.
-
 
 #### Writing
 
-* [ ] User can submit the writing of their own task.
-* [ ] By submitting a writing, User can choose public (all others can read it) or private (only who wrote it and the owner of the task can read it)
-* [ ] By submitting a writing User can also choose "Ask for help" so that other User can give an offer to correct the writing. A writing with "Ask for help" status is automatically public writing.
-* [ ] Before submitting a writing, User can save it as a draft, and only he/she can see it.
+* [ ] User can send the writing to another teachers and ask for correcting.
+* [ ] Teacher can accept or decline the request.
+* [ ] User can publish their writing to be seen by all of the teachers
+* [ ] Teachers who see the published writing can send User a message asking for correcting job.
+* [ ] User can accept or decline the request of teachers.
 
-#### Offer
+#### Deal
 
-* [ ] Teachers can offer a price (an amount of coin) to correct the writing with status "Ask for help".
-* [ ] Student who wrote it can see the profile of the teachers who offer him an price, including how many jobs the teacher has done, rating from the students who worked with the teacher.
+* [ ] Student can see the profile of the teachers including how many jobs the teacher has done, rating from the students who worked with the teacher.
 * [ ] Student can choose a teacher for helping him to correct his writing if his account has enough coin to pay for the teacher.
 
 #### Correcting
@@ -51,14 +53,18 @@ There are two types of writing task in a IELTS Exam
 * [ ] Teacher can make highlights, comments, suggestions on the writing.
 * [ ] To finish Teacher can give a score and final comment for the writing.
 * [ ] Student can receive the result after Teacher submit his correcting.
-* [ ] Student can confirm it and give the Teacher a rating for his work, the coin will be automatically send from Student's account to the teacher.
+* [ ] Student can confirm it and give the Teacher a rating for his work, the coin will be automatically send from Student's account to the Teacher.
 * [ ] Student can refuse the result if it doesn't satisfy him, he must give an reason for that and the admin can review it and give them final decision. (Quality Control)
 
 #### Users
 
 * [ ] User can sign up by providing their email, password and name.
 * [ ] User can login using an email and password.
-* [ ] Users can be both teacher (who correct the writing task) or student (who submit their text).
+* [ ] User has role in the system (STD: Student, TCH: Teacher, ADM: Admin)
+* [ ] User can manage their writings (CRUD)
+* [ ] User can submit a form to become a teacher.
+* [ ] Teacher can manage their correcting (CRUD)
+* [ ] User can manage their messages from other Student (Correcting request) or Teacher (Job request)
 * [ ] There are Admin roles to manage the system.
 
 #### Admin
@@ -67,7 +73,6 @@ There are two types of writing task in a IELTS Exam
 * [ ] Admin can review special case like Student refused Teacher's work.
 * [ ] Admin can activate, deactivate User
 * [ ] Admin can search User by name, email, phone to check User Profile
-* [ ] Admin can top up User's account (in case of wiring money to system's account or giving cash).
 
 
 ## Video Walkthrough
