@@ -50,7 +50,7 @@ gem 'carrierwave', '~> 1.0'
 gem 'mini_magick'
 
 # simple_form
-gem 'simple_form'
+
 gem "cocoon"
 
 
