@@ -2,6 +2,8 @@
 
 *Name of App* is a Ruby on Rails application that provides a community to help students who want to have support from teachers or other students to improve their writing skills for preparing IELTS Exam. Each writing consist of a task (example explain a chart, write a letter, essay) and the writing of the student. After finishing the task the Student can send it to Teachers asking for help or they can publish it so that all the teachers can see it and send request for a correcting job. The whole system uses Coin as a currency to exchange between Users, make payments, etc.
 
+Survey Responses of Students: https://docs.google.com/a/rmit.edu.au/spreadsheets/d/1-4KOD8AG3UDaRGXibXwmiUCE3SvK-uCKNhV_s-7LVLc/edit?usp=sharing
+
 - Submitted by: ETM Team
 - URL:
 
